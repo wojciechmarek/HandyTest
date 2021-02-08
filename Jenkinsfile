@@ -5,7 +5,7 @@ pipeline {
         stage('API build') {
             steps {
                 echo 'Building..'
-                sh 'ls'
+                sh 'dotnet publish -c Release -o handy.io api/Handy.io'
             }
         }
         stage('API stop and clear') {

@@ -5,19 +5,20 @@ pipeline {
         stage('API build') {
             steps {
                 echo 'Building..'
+                sh 'ls'
             }
         }
-        stage('API stop and clear running container') {
+        stage('API stop and clear') {
             steps {
                 echo 'Testing..'
             }
         }
-        stage('API create container') {
+        stage('API create') {
             steps {
                 echo 'Deploying....'
             }
         }
-        stage('API deploy container') {
+        stage('API deploy') {
             steps {
                 echo 'Deploying....'
             }
@@ -28,17 +29,17 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('FRONT stop and clear running container') {
+        stage('FRONT stop and clear') {
             steps {
                 echo 'Testing..'
             }
         }
-        stage('FRONT create container') {
+        stage('FRONT create') {
             steps {
                 echo 'Deploying....'
             }
         }
-        stage('FRONT deploy container') {
+        stage('FRONT deploy') {
             steps {
                 echo 'Deploying....'
             }
